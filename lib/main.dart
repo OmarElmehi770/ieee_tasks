@@ -52,8 +52,13 @@ class MyApp extends StatelessWidget {
                             image: DecorationImage(
                               image: AssetImage('assets/img1.png'),
                             )),
-                        child: Image.network(''),),
-
+                        child: Center(
+                          child: Text(
+                            'General',
+                            style: TextStyle(color: Colors.white, fontSize: 25),
+                          ),
+                        ),
+                      ),
                       Container(
                         height: 125,
                         width: 200,
@@ -72,32 +77,9 @@ class MyApp extends StatelessWidget {
                     ],
                   ),
                 ),
-                SizedBox(height: 30,),
-                Container(
-                  height: 200,
-                  width: double.infinity,
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(15),
-                      image: DecorationImage(
-                        image: AssetImage('assets/img1.png'),
-                      )),
+                SizedBox(
+                  height: 30,
                 ),
-                Text(
-                  "First human bird flu case reported Ohio, Departments of health confirms - ...",
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 15,
-                  )
-                ),
-                Text(
-                    "A farmer in Mercer County, Ohio has been infected with bird flu, the Ohio Department of Health anno...",
-                    style: TextStyle(
-                      color: Colors.grey,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 12,
-                    )
-                ),
-                SizedBox(height: 20,),
                 Container(
                   height: 200,
                   width: double.infinity,
@@ -112,16 +94,39 @@ class MyApp extends StatelessWidget {
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 15,
-                    )
-                ),
+                    )),
                 Text(
                     "A farmer in Mercer County, Ohio has been infected with bird flu, the Ohio Department of Health anno...",
                     style: TextStyle(
                       color: Colors.grey,
                       fontWeight: FontWeight.bold,
                       fontSize: 12,
-                    )
+                    )),
+                SizedBox(
+                  height: 20,
                 ),
+                Container(
+                  height: 200,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(15),
+                      image: DecorationImage(
+                        image: AssetImage('assets/img1.png'),
+                      )),
+                ),
+                Text(
+                    "First human bird flu case reported Ohio, Departments of health confirms - ...",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 15,
+                    )),
+                Text(
+                    "A farmer in Mercer County, Ohio has been infected with bird flu, the Ohio Department of Health anno...",
+                    style: TextStyle(
+                      color: Colors.grey,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 12,
+                    )),
               ],
             ),
           ),
