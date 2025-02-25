@@ -184,7 +184,7 @@ class _BMI_CalculatorState extends State<BMI_Calculator> {
                       children: [
                         Text(
                           "Weight",
-                          style: TextStyle(
+                          style: TextStyle( 
                             fontSize: 35,
                           ),
                         ),
