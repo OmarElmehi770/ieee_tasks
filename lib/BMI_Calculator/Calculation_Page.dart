@@ -220,9 +220,10 @@ class _BMI_CalculatorState extends State<BMI_Calculator> {
                   setState(() {
                     showDialog(context: context, builder: (context) {
                       return AlertDialog(
-                        backgroundColor: Colors.amber,
+                        backgroundColor: Colors.white,
                         title: Text("Calculation"),
-                        content:Text("cjkhwdw"),
+
+                        content:Text(""),
                       );
                     });
                   });
